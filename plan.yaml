@@ -1,0 +1,11 @@
+- create a class which represents the assignment's job:
+    - job includes:
+        - fetch weather data from the weather API and query the specified cities.
+        - compare API results:
+            - per day:
+                - find the city with the max temperature
+                - find the city with the min temperature
+                - list all cities which had  rain
+        - export results to csv file
+
+- create a fixtures based on real results and work against it.
