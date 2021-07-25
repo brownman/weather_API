@@ -1,0 +1,9 @@
+{
+    "watch": [
+        "src",
+        "config"
+    ],
+    "ext": "ts,json",
+    "ignore": [],
+    "exec": "NODE_OPTIONS='--unhandled-rejections=strict' ts-node"
+}

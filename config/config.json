@@ -1,0 +1,25 @@
+{
+    "API_key_old": "fff9f900987a05902f07d757aba5540f",
+    "API_key": "0bcf5fdd5c49d6734f0f8ba24a78587d",
+    "api_docs": "https://openweathermap.org/forecast5",
+    "api1": "https://api.openweathermap.org/data/2.5/forecast?q={city_name}&appid={API_key}",
+    "api": "https://api.openweathermap.org/data/2.5/forecast?id={city ID}&appid={API key}",
+    "example": "https://api.openweathermap.org/data/2.5/forecast?id=293198&appid=0bcf5fdd5c49d6734f0f8ba24a78587d",
+    "cities_name": [
+        "Jerusalem",
+        "New York",
+        "Dubai",
+        "Lisbon",
+        "Oslo",
+        "Paris",
+        "Berlin",
+        "Athens",
+        "Seoul",
+        "Singapore"
+    ],
+    "csv_path": "/tmp",
+    "csv_basename": "forecast",
+    "order": [
+        "day, highest_temp, lowest_temp, with_rain"
+    ]
+}
