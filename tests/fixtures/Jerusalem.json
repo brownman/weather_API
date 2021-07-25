@@ -4,42 +4,6 @@
     "cnt": 40,
     "list": [
         {
-            "dt": 1627246800,
-            "main": {
-                "temp": 295.77,
-                "feels_like": 296.44,
-                "temp_min": 295.59,
-                "temp_max": 295.77,
-                "pressure": 1004,
-                "sea_level": 1004,
-                "grnd_level": 921,
-                "humidity": 90,
-                "temp_kf": 0.18
-            },
-            "weather": [
-                {
-                    "id": 801,
-                    "main": "Clouds",
-                    "description": "few clouds",
-                    "icon": "02n"
-                }
-            ],
-            "clouds": {
-                "all": 13
-            },
-            "wind": {
-                "speed": 3.16,
-                "deg": 290,
-                "gust": 3.95
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2021-07-25 21:00:00"
-        },
-        {
             "dt": 1627257600,
             "main": {
                 "temp": 295.5,
@@ -1173,7 +1137,7 @@
                     "id": 800,
                     "main": "Clear",
                     "description": "clear sky",
-                    "icon": "01d"
+                    "icon": "01n"
                 }
             ],
             "clouds": {
@@ -1187,7 +1151,7 @@
             "visibility": 10000,
             "pop": 0,
             "sys": {
-                "pod": "d"
+                "pod": "n"
             },
             "dt_txt": "2021-07-29 21:00:00"
         },
@@ -1209,7 +1173,7 @@
                     "id": 800,
                     "main": "Clear",
                     "description": "clear sky",
-                    "icon": "01d"
+                    "icon": "01n"
                 }
             ],
             "clouds": {
@@ -1223,7 +1187,7 @@
             "visibility": 10000,
             "pop": 0,
             "sys": {
-                "pod": "d"
+                "pod": "n"
             },
             "dt_txt": "2021-07-30 00:00:00"
         },
@@ -1425,7 +1389,7 @@
                     "id": 800,
                     "main": "Clear",
                     "description": "clear sky",
-                    "icon": "01d"
+                    "icon": "01n"
                 }
             ],
             "clouds": {
@@ -1439,9 +1403,45 @@
             "visibility": 10000,
             "pop": 0,
             "sys": {
-                "pod": "d"
+                "pod": "n"
             },
             "dt_txt": "2021-07-30 18:00:00"
+        },
+        {
+            "dt": 1627678800,
+            "main": {
+                "temp": 296.76,
+                "feels_like": 296.48,
+                "temp_min": 296.76,
+                "temp_max": 296.76,
+                "pressure": 1006,
+                "sea_level": 1006,
+                "grnd_level": 919,
+                "humidity": 50,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 800,
+                    "main": "Clear",
+                    "description": "clear sky",
+                    "icon": "01d"
+                }
+            ],
+            "clouds": {
+                "all": 0
+            },
+            "wind": {
+                "speed": 1.91,
+                "deg": 283,
+                "gust": 1.87
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2021-07-30 21:00:00"
         }
     ],
     "city": {
@@ -1454,7 +1454,7 @@
         "country": "IL",
         "population": 714000,
         "timezone": 10800,
-        "sunrise": 1627181412,
-        "sunset": 1627231248
+        "sunrise": 1627267850,
+        "sunset": 1627317611
     }
 }

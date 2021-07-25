@@ -4,53 +4,17 @@
     "cnt": 40,
     "list": [
         {
-            "dt": 1627246800,
-            "main": {
-                "temp": 294,
-                "feels_like": 294.23,
-                "temp_min": 292.83,
-                "temp_max": 294,
-                "pressure": 1014,
-                "sea_level": 1014,
-                "grnd_level": 1010,
-                "humidity": 80,
-                "temp_kf": 1.17
-            },
-            "weather": [
-                {
-                    "id": 803,
-                    "main": "Clouds",
-                    "description": "broken clouds",
-                    "icon": "04n"
-                }
-            ],
-            "clouds": {
-                "all": 75
-            },
-            "wind": {
-                "speed": 4.44,
-                "deg": 323,
-                "gust": 7.75
-            },
-            "visibility": 10000,
-            "pop": 0,
-            "sys": {
-                "pod": "n"
-            },
-            "dt_txt": "2021-07-25 21:00:00"
-        },
-        {
             "dt": 1627257600,
             "main": {
-                "temp": 293.42,
-                "feels_like": 293.7,
+                "temp": 293.35,
+                "feels_like": 293.62,
                 "temp_min": 292.26,
-                "temp_max": 293.42,
+                "temp_max": 293.35,
                 "pressure": 1015,
                 "sea_level": 1015,
                 "grnd_level": 1010,
                 "humidity": 84,
-                "temp_kf": 1.16
+                "temp_kf": 1.09
             },
             "weather": [
                 {
@@ -78,15 +42,15 @@
         {
             "dt": 1627268400,
             "main": {
-                "temp": 292.73,
-                "feels_like": 292.99,
+                "temp": 292.7,
+                "feels_like": 292.98,
                 "temp_min": 292.1,
-                "temp_max": 292.73,
+                "temp_max": 292.7,
                 "pressure": 1015,
                 "sea_level": 1015,
                 "grnd_level": 1009,
-                "humidity": 86,
-                "temp_kf": 0.63
+                "humidity": 87,
+                "temp_kf": 0.6
             },
             "weather": [
                 {
@@ -1442,6 +1406,42 @@
                 "pod": "d"
             },
             "dt_txt": "2021-07-30 18:00:00"
+        },
+        {
+            "dt": 1627678800,
+            "main": {
+                "temp": 290.44,
+                "feels_like": 290.1,
+                "temp_min": 290.44,
+                "temp_max": 290.44,
+                "pressure": 1018,
+                "sea_level": 1018,
+                "grnd_level": 1012,
+                "humidity": 72,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 800,
+                    "main": "Clear",
+                    "description": "clear sky",
+                    "icon": "01d"
+                }
+            ],
+            "clouds": {
+                "all": 0
+            },
+            "wind": {
+                "speed": 8.04,
+                "deg": 349,
+                "gust": 14.58
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2021-07-30 21:00:00"
         }
     ],
     "city": {
