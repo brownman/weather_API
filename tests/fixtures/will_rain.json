@@ -1,0 +1,167 @@
+{
+    "cod": "200",
+    "message": 0,
+    "cnt": 40,
+    "list": [
+        {
+            "dt": 1627257600,
+            "main": {
+                "temp": 291.77,
+                "feels_like": 290.44,
+                "temp_min": 289.66,
+                "temp_max": 291.77,
+                "pressure": 1016,
+                "sea_level": 1016,
+                "grnd_level": 1013,
+                "humidity": 29,
+                "temp_kf": 2.11
+            },
+            "weather": [
+                {
+                    "id": 804,
+                    "main": "Clouds",
+                    "description": "overcast clouds",
+                    "icon": "04n"
+                }
+            ],
+            "clouds": {
+                "all": 97
+            },
+            "wind": {
+                "speed": 1.32,
+                "deg": 31,
+                "gust": 1.21
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2021-07-26 00:00:00"
+        },
+        {
+            "dt": 1627268400,
+            "main": {
+                "temp": 289.99,
+                "feels_like": 289.06,
+                "temp_min": 288.57,
+                "temp_max": 289.99,
+                "pressure": 1017,
+                "sea_level": 1017,
+                "grnd_level": 1013,
+                "humidity": 51,
+                "temp_kf": 1.42
+            },
+            "weather": [
+                {
+                    "id": 804,
+                    "main": "Clouds",
+                    "description": "overcast clouds",
+                    "icon": "04d"
+                }
+            ],
+            "clouds": {
+                "all": 99
+            },
+            "wind": {
+                "speed": 1.47,
+                "deg": 38,
+                "gust": 1.38
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2021-07-26 03:00:00"
+        },
+        {
+            "dt": 1627279200,
+            "main": {
+                "temp": 292.67,
+                "feels_like": 292.19,
+                "temp_min": 292.67,
+                "temp_max": 292.67,
+                "pressure": 1017,
+                "sea_level": 1017,
+                "grnd_level": 1014,
+                "humidity": 58,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 804,
+                    "main": "Clouds",
+                    "description": "overcast clouds",
+                    "icon": "04d"
+                }
+            ],
+            "clouds": {
+                "all": 98
+            },
+            "wind": {
+                "speed": 1.37,
+                "deg": 61,
+                "gust": 2.9
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2021-07-26 06:00:00"
+        },
+        {
+            "dt": 1627678800,
+            "main": {
+                "temp": 285.37,
+                "feels_like": 285.13,
+                "temp_min": 285.37,
+                "temp_max": 285.37,
+                "pressure": 993,
+                "sea_level": 993,
+                "grnd_level": 990,
+                "humidity": 95,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 500,
+                    "main": "Rain",
+                    "description": "light rain",
+                    "icon": "10d"
+                }
+            ],
+            "clouds": {
+                "all": 50
+            },
+            "wind": {
+                "speed": 1.55,
+                "deg": 45,
+                "gust": 1.65
+            },
+            "visibility": 10000,
+            "pop": 0.88,
+            "rain": {
+                "3h": 1.02
+            },
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2021-07-30 21:00:00"
+        }
+    ],
+    "city": {
+        "id": 3143244,
+        "name": "Oslo",
+        "coord": {
+            "lat": 59.9127,
+            "lon": 10.7461
+        },
+        "country": "NO",
+        "population": 580000,
+        "timezone": 7200,
+        "sunrise": 1627180949,
+        "sunset": 1627243457
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "jerusalem": {
+        "list": [
+            {
+                "dt_txt": "2021-07-30 12:00:00",
+                "main": {
+                    "min_temp": 100,
+                    "max_temp": 300
+                }
+            },
+            {
+                "dt_txt": "2021-07-30 12:00:00",
+                "main": {
+                    "min_temp": 96,
+                    "max_temp": 301
+                }
+            }
+        ]
+    },
+    "new-york": {
+        "list": [
+            {
+                "dt_txt": "2021-07-30 12:00:00",
+                "main": {
+                    "min_temp": 99,
+                    "max_temp": 299
+                }
+            },
+            {
+                "dt_txt": "2021-08-30 12:00:00",
+                "main": {
+                    "min_temp": 98,
+                    "max_temp": 303
+                }
+            }
+        ]
+    },
+    "tveria": {
+        "list": [
+            {
+                "dt_txt": "2021-07-30 11:00:00",
+                "main": {
+                    "min_temp": 9,
+                    "max_temp": 299
+                }
+            },
+            {
+                "dt_txt": "2021-08-30 12:00:00",
+                "main": {
+                    "min_temp": 98,
+                    "max_temp": 302
+                }
+            }
+        ]
+    }
+}

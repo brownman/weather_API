@@ -2,10 +2,6 @@
 - accomplish the flow
 
 - dir structure:
-- add dirs:
-- files instead of fixtures
-- fixtures for tests
--
 
 - create a class which represents the assignment's job:
     - job includes:
@@ -17,4 +13,4 @@
                 - list all cities which had  rain
         - export results to csv file
 
-- create a fixtures based on real results and work against it.
+- create fixtures based on real results and work against it.
