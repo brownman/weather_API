@@ -1,13 +1,21 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",
-    "allowJs": false,
-    "target": "es2017",
-    "module": "commonjs",
-    "strict": true,
-    "declaration": true
+      "outDir": "./dist",
+      "pretty": true,
+      "target": "es2017",
+      "lib": [
+          "es2017",
+          "dom"
+      ],
+      "allowSyntheticDefaultImports": true,
+      "module": "commonjs",
+      "sourceMap": true,
+      "declaration": true,
+      "importHelpers": true,
+      "strict": true,
+      "noImplicitAny": false // Needed to compile tap
   },
-  "include": [
-    "./src/*"
+  "exclude": [
+     
   ]
 }

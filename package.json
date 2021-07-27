@@ -8,10 +8,10 @@
     "test": "NODE_ENV=testing jest",
     "lint": "standard",
     "lint:fix": "standard --fix",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "ts-node --inspect=0.0.0.0:9222 ./src/compare_cities.ts",
     "start": "ts-node src/compare_cities.ts",
     "start:watch": "./node_modules/.bin/nodemon src/compare_cities.ts",
-    "create:fixtures": "ts-node tasks/create_fixtures.ts"
+    "download:forecast": "ts-node ./tasks/download_forecast.ts"
   },
   "engines": {
     "node": ">=10.0.0"
