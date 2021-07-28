@@ -27,19 +27,15 @@ export const update_global_minMax = (output_cities_res: any) => {
 
 export const get_minmax_temp_for_city = (list: any, city_name: string) => {
 
-    console.log({ city_name });
-
-    console.log(JSON.stringify(list, null, 4));
-
     const item_ops = {
         get_item_day: (item) => {
             return item["dt_txt"].split(' ')[0];
         },
         get_item_min: (item) => {
-            return item["main"]["min_temp"];
+            return item["main"]["temp_min"];
         },
         get_item_max: (item) => {
-            return item["main"]["max_temp"];
+            return item["main"]["temp_max"];
         }
     }
 
@@ -65,5 +61,6 @@ export const get_minmax_temp_for_city = (list: any, city_name: string) => {
             return acc;
         }, {});
     }
-    return minMax(list);
+    const res = minMax(list);
+    return res;
 }

@@ -28,59 +28,44 @@ export class CompareCities {
 
         return fsPromises.readFile(`${storage_dir}/${city_name}.json`, 'utf8');
     }
-    process_data_for_each_city(): Promise<any> {
-        let cityData; //load each json file in serial order, keeping memmory consumption low
+
+    async process_data_for_each_city(): Promise<any> {
 
         let daily_min_max_temp_by_city = {};
         let list_rain_info = {};
 
-        //resolve when is done
-        let counter = 0;
-        return new Promise(async (resolve, reject) => {
-            for (let city_name of this.cities) {
-                cityData = await this.load_data(city_name).catch(err => { return reject(err); });
-                if (!cityData) {
-                    return reject("empty file for city:" + city_name);
-                }
-                counter++;
-                console.log(counter + " of " + this.cities.length + " cities processed");
 
-                cityData = JSON.parse(cityData);
+        let promises = this.cities.map(city_name => {
+            return this.load_data(city_name).catch(err => { throw new Error(err); });
+        })
+        const cities_data = await Promise.all(promises).catch(err => { throw new Error(); });
+        cities_data.forEach(cityData => {
+            cityData = JSON.parse(cityData);
 
-                if (cityData.hasOwnProperty('list') && Array.isArray(cityData.list)) {
-                    daily_min_max_temp_by_city[city_name] = get_minmax_temp_for_city(cityData.list, city_name);
-                    list_rain_info[city_name] = get_rain_info(cityData.list);
-                } else {
-                    return reject("city.list data is not an array");
-                }
-                if (counter === this.cities.length) {
-                    console.log(JSON.stringify(daily_min_max_temp_by_city, null, 4));
+            const city_name = cityData.city?.name; //todo: must be nicer syntax
+            if (!city_name) { throw new Error("city_name is not defined"); }
 
-                    return resolve([daily_min_max_temp_by_city, list_rain_info]);
-                }
+            if (cityData.hasOwnProperty('list') && Array.isArray(cityData.list)) {
+                daily_min_max_temp_by_city[city_name] = get_minmax_temp_for_city(cityData.list, city_name);
+                list_rain_info[city_name] = get_rain_info(cityData.list);
+            } else {
+                throw new Error("city.list data is not an array");
             }
+
         });
+        return { daily_min_max_temp_by_city, list_rain_info };
     }
+
+
 
     async steps(): Promise<any> {
-        //
-        const res_process_data_for_each_city: any = await this.process_data_for_each_city().catch((err) => { console.log(err); process.exit(1); });
-        const [daily_min_max_temp_by_city, list_rain_info] = res_process_data_for_each_city as any;
-
+        const res_process_data_for_each_city: any = await this.process_data_for_each_city().catch((err) => { return Promise.reject(err) });
+        const { daily_min_max_temp_by_city, list_rain_info } = res_process_data_for_each_city as any;
         const res_global_accumulator = update_global_minMax(daily_min_max_temp_by_city);
-        // console.log(daily_min_max_temp_by_city);
-        console.log(JSON.stringify(res_global_accumulator, null, 4));
-        console.log(list_rain_info);
-        return { res_global_accumulator, daily_min_max_temp_by_city, list_rain_info };
+
+        return { res_global_accumulator, list_rain_info };
     }
 }
 
-async function Test() {
-    const c1 = new CompareCities(config.cities_name, `${__dirname}/../storage`);
-    const res = await c1.steps();
-    console.log(res);
-}
 
-
-Test();
 

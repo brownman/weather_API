@@ -1,7 +1,8 @@
 {
     "watch": [
         "src",
-        "config"
+        "config",
+        "lib"
     ],
     "ext": "ts,json",
     "ignore": [],

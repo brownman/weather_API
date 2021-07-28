@@ -50,9 +50,12 @@ describe('extract relevant fields from data', () => {
         expect(res_rain).toEqual(true);
     });
 
-    it('check integration - run all steps using a class', () => {
+    it('check integration - run all steps using a class', async (done) => {
         const compareCities = new CompareCities(["Jerusalem", "New York"], `${__dirname}/fixtures/cities`);
-        const res = compareCities.steps();
-        expect(res).toEqual(true);
+        const res = await compareCities.steps();
+        const expected_res = { "list_rain_info": { "Jerusalem": false, "New York": true }, "res_global_accumulator": { "acc": { "2021-07-27": { "max": { "cities": ["New York"], "temp": 305.43 }, "min": { "cities": ["Jerusalem"], "temp": 294.86 } }, "2021-07-28": { "max": { "cities": ["Jerusalem"], "temp": 303.51 }, "min": { "cities": ["Jerusalem"], "temp": 293.32 } }, "2021-07-29": { "max": { "cities": ["Jerusalem"], "temp": 304.43 }, "min": { "cities": ["Jerusalem"], "temp": 293.2 } }, "2021-07-30": { "max": { "cities": ["Jerusalem"], "temp": 305.61 }, "min": { "cities": ["Jerusalem"], "temp": 293.73 } }, "2021-07-31": { "max": { "cities": ["Jerusalem"], "temp": 306.54 }, "min": { "cities": ["New York"], "temp": 293.4 } }, "2021-08-01": { "max": { "cities": ["Jerusalem"], "temp": 307.05 }, "min": { "cities": ["New York"], "temp": 294.88 } } } } };
+
+        expect(res).toEqual(expected_res);
+        done();
     });
 });
