@@ -1,6 +1,5 @@
 'use strict'
 
-import { GlobalAccumulator } from "../lib/globalAccumulator";
 const path = require('path');
 var fs = require('fs');
 
