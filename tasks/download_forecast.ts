@@ -7,6 +7,6 @@ const storage_dir = ".//storage";
 config.cities_name.forEach(async (city_name: string) => {
     console.log(`Creating storage for ${city_name}`);
     const url = config.api.replace("{city_name}", city_name).replace("{API_key}", config.API_key);
-    const res = await node_fetch(url).then((data: any) => { return data.json(); });
+    const res = await node_fetch(url).then((data: any) => { return data.json(); }).catch(err => { throw err; });
     fs.writeFileSync(`${storage_dir}/${city_name}.json`, JSON.stringify(res, null, 4));
 })

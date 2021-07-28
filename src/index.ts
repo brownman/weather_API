@@ -3,7 +3,7 @@ const config = require('../config/config.json');
 
 async function Test() {
     const c1 = new CompareCities(config.cities_name, `${__dirname}/../storage`);
-    const { res_global_accumulator, list_rain_info } = await c1.steps();
+    const { res_global_accumulator, list_rain_info } = await c1.steps().catch(err => { console.error(err.message); process.exit(1); });
 
     console.log('___5 days forecast:___')
     console.log('>> print the min/max temperature among the given cities for each day (the min/max temperature is tagged with its host city)');
