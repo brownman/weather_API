@@ -14,7 +14,7 @@ export class CompareCities {
 
     constructor(cities: string[], path_storage: string) {
         this.path_storage = path_storage;
-        console.log("weather of cities: " + cities);
+        // console.log("weather of cities: " + cities);
         this.cities = cities;
     }
 
