@@ -8,9 +8,9 @@
     "test": "NODE_ENV=testing jest",
     "lint": "standard",
     "lint:fix": "standard --fix",
-    "debug": "ts-node --inspect=0.0.0.0:9222 ./src/compare_cities.ts",
-    "start": "ts-node src/compare_cities.ts",
-    "start:watch": "./node_modules/.bin/nodemon src/compare_cities.ts",
+    "debug": "ts-node --inspect=0.0.0.0:9222 ./src/index.ts",
+    "start": "ts-node src/index.ts",
+    "start:watch": "./node_modules/.bin/nodemon src/index.ts",
     "download:forecast": "ts-node ./tasks/download_forecast.ts"
   },
   "engines": {
