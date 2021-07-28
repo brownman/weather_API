@@ -6,11 +6,6 @@ const path = require('path')
 var fs = require('fs');
 const fsPromises = require('fs').promises;
 
-import Utils from '../lib/utils';
-const config = require('../config/config.json');
-type CityTemperature = { city: string, temp: number }
-type TemperatureMinMax = { min: CityTemperature, max: CityTemperature }
-type Accumulator = Map<string, TemperatureMinMax>;
 import { get_minmax_temp_for_city, get_rain_info, update_global_minMax } from '../lib/tasks';
 
 export class CompareCities {
