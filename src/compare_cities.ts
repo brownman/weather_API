@@ -38,7 +38,7 @@ export class CompareCities {
         let promises = this.cities.map(city_name => {
             return this.load_data(city_name).catch(err => { throw new Error(err); });
         })
-        const cities_data = await Promise.all(promises).catch(err => { throw new Error(); });
+        const cities_data = await Promise.all(promises).catch(err => { throw new Error(err); });
         cities_data.forEach(cityData => {
             cityData = JSON.parse(cityData);
 
