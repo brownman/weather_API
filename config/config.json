@@ -1,7 +1,6 @@
 {
     "API_key": "0bcf5fdd5c49d6734f0f8ba24a78587d",
     "api": "https://api.openweathermap.org/data/2.5/forecast?q={city_name}&appid={API_key}",
-    "example": "https://api.openweathermap.org/data/2.5/forecast?q=jerusalem&appid=0bcf5fdd5c49d6734f0f8ba24a78587d",
     "cities_name": [
         "Jerusalem",
         "New York",
@@ -13,10 +12,5 @@
         "Athens",
         "Seoul",
         "Singapore"
-    ],
-    "csv_path": "/tmp",
-    "csv_basename": "forecast",
-    "order": [
-        "day, highest_temp, lowest_temp, with_rain"
     ]
 }
