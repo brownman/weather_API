@@ -1,3 +1,5 @@
+[![Node.js CI](https://github.com/brownman/weather_API/actions/workflows/node.js.yml/badge.svg)](https://github.com/brownman/weather_API/actions/workflows/node.js.yml)
+
 ## mission
 
 - Download open weather data for the next 5 days and do various tasks.
